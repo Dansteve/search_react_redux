@@ -1,0 +1,38 @@
+/* YOUR CUSTOM STYLES */
+.md-form .prefix.active {
+    color: #007E33!important;
+}
+
+.input-group .input-group-addon {
+    background-color: #fff; 
+}
+
+span#basic-addon1 {
+    background: transparent;; 
+     color: #007E33!important;
+}
+
+.md-form.input-group .form-control {
+    margin: 0;
+    padding-left: 1rem;
+    margin-right: -40px;
+}
+body{
+    background: rgba(0, 200, 81, 0.18);
+}
+
+.before-search{
+   height: 100vh; 
+    -webkit-animation-name: slideInDown;
+  animation-name: slideInDown; 
+}
+.after-search{
+  -webkit-transition: max-height .5s; 
+  -moz-transition: max-height .5s; 
+  -ms-transition: max-height .5s; 
+  -o-transition: max-height .5s; 
+  transition: max-height .5s;  
+  overflow: hidden;
+  // "height: 0" not work with css transitions
+  max-height: 40vh;
+}
