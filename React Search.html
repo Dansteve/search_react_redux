@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Dansteve</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <link href="css/compiled.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="reactjs/react.min.js"></script>
+    <script src="reactjs/react-dom.min.js"></script>
+    <script src="reactjs/browser.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="before-search" id="searchBox">
+            <div class="flex-center flex-column">
+                <h1 class="animated fadeIn mb-2">Welcome to a React search project</h1>
+                <div class="md-form input-group" style="width:450px">
+                    <input type="text" class="form-control" id="searchTxt" value="" placeholder="searchTxt" oninput="changeIcon()" id="search" aria-describedby="basic-addon1"> <span class="input-group-addon" id="basic-addon1"><a onclick="resetSearch();"><i class="fa fa-search" id="icons"></i></a></span> </div>
+                <p class="animated fadeIn text-muted">
+                    <button class="btn btn-outline-success btn-rounded waves-effect">Random article</button>
+                </p>
+            </div>
+        </div>
+        <div id="result"></div>
+    </div>
+    
+    <!-- SCRIPTS -->
+    <script type="text/babel"> var SearchResult = React.createClass({ render:function(){ return (
+        <a href="#" className="list-group-item list-group-item-action flex-column align-items-start">
+            <div className="d-flex w-100 justify-content-between">
+                <h5 className="mb-1">List group item heading</h5> <small className="text-muted">3 days ago <i className="fa fa-share-alt fa-2x"></i></small> </div>
+            <p className="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p> <small className="text-muted">Donec id elit non mi porta.</small> </a> ) } }); ReactDOM.render(
+        <div className="list-group">
+            <SearchResult></SearchResult>
+            <SearchResult></SearchResult>
+            <SearchResult></SearchResult>
+            <SearchResult></SearchResult>
+        </div>, document.getElementById('result')); </script>
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="js/tether.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
+</body>
+
+</html>
